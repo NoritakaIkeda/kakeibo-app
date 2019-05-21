@@ -1,0 +1,16 @@
+<h1>家計簿を入力</h1>
+
+<a href="index.html">ホームに戻る</a>
+<%= form_for Item.new do |f| %>
+    <%= f.label :itemname %>
+    <%= f.text_field :itemname %>
+    <%= f.label :typename %>
+    <%= f.text_field :typename %>
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+    <%= f.label :date %>
+    <%= f.text_field :date %>
+    <%= f.label :memo %>
+    <%= f.text_area :memo %>
+    <%= f.submit %>
+  <% end %>

@@ -1,0 +1,12 @@
+<h1>家計簿アプリ　ホーム</h1>
+
+<a href="new.html">家計簿を入力</a>
+<a href="show.html">履歴を見る</a>
+<% @items.each do |item| %>
+    <p><%= item.itemname %> 
+    <%= item.typename %> 
+    <%= item.price %>
+    <%= item.date %>
+    <%= item.memo %></p>
+    
+  <% end %>
